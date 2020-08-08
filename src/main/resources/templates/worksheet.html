@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Worksheet</title>
+</head>
+<body>
+<form action="#" th:action="@{/worksheet}" th:object="${user}" method="post">
+    <label>
+        EMAIL: <input type="text" th:field="*{email}" />
+    </label>
+    <br>
+    <br>
+    <label>
+        NAME: <input type="text" th:field="*{fullName}" />
+    </label>
+    <br>
+    <br>
+    <label>
+        BIRTH DATE: <input type="date" th:field="*{birthday}" />
+    </label>
+    <br>
+    <br>
+    <label>
+        ADDITIONAL MESSAGE: <textarea th:field="*{additionalMessage}"></textarea>
+    </label>
+    <br>
+    <br>
+    <input type="submit" >
+</form>
+</body>
+</html>
