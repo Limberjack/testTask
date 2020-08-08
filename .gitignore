@@ -1,5 +1,5 @@
 .idea
-*.pdf
+.pdf
 target
 application.properties
 test
